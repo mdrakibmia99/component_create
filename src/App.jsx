@@ -4,15 +4,17 @@ import ImageGalleryLayout from "./components/ImageGalleryLayout/ImageGalleryLayo
 import QrCodeGenerate from "./components/QrCode/QrCodeGenerate"
 import SelectDivision from "./components/SelectDivision/SelectDivision"
 import Accordian from "./components/accordian/Accordian"
+import SEOHomePage from "./components/seapage1/SEOHomePage"
 
 
 function App() {
   return (
     <div>
-      <ImageGalleryLayout />
+      {/* <ImageGalleryLayout />
       <Accordian />
       <SelectDivision />
-      <QrCodeGenerate/>
+      <QrCodeGenerate/> */}
+      <SEOHomePage/>
     </div>
   )
 }
