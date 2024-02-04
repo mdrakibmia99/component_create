@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Table from "./Table";
+import SEOBarChart from "../BarchartCreate/SEOBarChart";
 
 const SEOHomePage = () => {
   const [data, setData] = useState([]);
@@ -25,12 +26,12 @@ const SEOHomePage = () => {
   if (loading) {
     return <h1>Loading...</h1>
   }
-  console.log(data)
+  // console.log(data)
   return (
     <div>
       <Table data={data}/> 
-
-  
+      
+    <SEOBarChart rawData={data}/>
     </div>
   );
 };

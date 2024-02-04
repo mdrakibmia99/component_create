@@ -6,7 +6,7 @@ const SideBar = ({ setOpen ,setSelectedTitleTable}) => {
     const handleCheckboxChange = (title) => {
         if (checkedItem.includes(title)) {
             const filterChecked = checkedItem.filter(item => item != title)
-            console.log(filterChecked, "fch")
+            // console.log(filterChecked, "fch")
             setCheckedItem(filterChecked);
             setSelectedTitleTable(filterChecked);
         } else {
@@ -14,9 +14,9 @@ const SideBar = ({ setOpen ,setSelectedTitleTable}) => {
             setSelectedTitleTable([...checkedItem, title]);
 
         }
-        console.log(title)
+        // console.log(title)
     };
-    console.log(checkedItem, "rakib")
+    // console.log(checkedItem, "rakib")
     return (
         <div>
             <div className="flex justify-end border-b-2">

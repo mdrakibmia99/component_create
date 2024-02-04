@@ -8,7 +8,7 @@ const countries=[
 const SelectDivision = () => {
  const [indexValue,setIndexValue]=useState(null)
  const filterValue=countries.find(country=> country.value===indexValue)
- console.log(indexValue);
+//  console.log(indexValue);
     return (
         <div className="mt-10">
             <h1 className="mt-5 text-center font-bold text-5xl">Select City</h1>
