@@ -71,7 +71,7 @@ const Table = ({ data }) => {
             {
                 open &&
                 <div className="absolute top-0 right-0 bg-slate-500 w-[300px] h-screen transition-all duration-300 ease-in-out">
-                    <SideBar setOpen={setOpen} setSelectedTitleTable={setSelectedTitleTable} />
+                    <SideBar setOpen={setOpen} setSelectedTitleTable={setSelectedTitleTable}  selectedTitleTable={selectedTitleTable}/>
                 </div>
             }
         </div>

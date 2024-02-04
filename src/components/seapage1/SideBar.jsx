@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoIosCloseCircle } from "react-icons/io";
 const tableTitle = ["Name", "ID", "Country", "Deal Status", "Status"]
-const SideBar = ({ setOpen ,setSelectedTitleTable}) => {
+const SideBar = ({ setOpen ,setSelectedTitleTable,selectedTitleTable}) => {
     const [checkedItem, setCheckedItem] = useState(tableTitle);
     const handleCheckboxChange = (title) => {
         if (checkedItem.includes(title)) {
@@ -32,7 +32,7 @@ const SideBar = ({ setOpen ,setSelectedTitleTable}) => {
                         type="checkbox" /> <span>{title}</span> */}
                     <label className="flex items-center">
                         <input
-                            checked={checkedItem.includes(title) || false}
+                            checked={selectedTitleTable.includes(title) || false}
                             onChange={() => handleCheckboxChange(title)}
                             type="checkbox" id={`title`} />
                         <span className="ml-2">{title}</span>
