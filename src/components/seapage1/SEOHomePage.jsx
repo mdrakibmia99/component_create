@@ -28,9 +28,10 @@ const SEOHomePage = () => {
   }
   // console.log(data)
   return (
-    <div>
+    <div> 
+       <h1 className="text-4xl font-bold text-center">Table column Drag Drop and column title Select/disselect</h1>
       <Table data={data}/> 
-      
+      <h1 className="text-4xl font-bold text-center mt-5">Bar Chart</h1>
     <SEOBarChart rawData={data}/>
     </div>
   );
